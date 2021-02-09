@@ -18,7 +18,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer #sentiment 
 import time #to check runtime speed 
 import datetime as dt
 
-data_path = '/Users/samueljocas/Desktop/Data Science Portfolio/New York Times ML Algorithm  /Op-Ed Training Datasets'
+data_path = 'pathname'
 
 #converts list of proper-written names to ones that fit in the website link for the webscraper
 def nameToWeb(names):
