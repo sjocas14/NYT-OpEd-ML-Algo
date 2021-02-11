@@ -13,7 +13,7 @@ from sklearn.naive_bayes import GaussianNB
 import pandas as pd
 import pickle
 
-filepath = "/Users/samueljocas/Desktop/Data Science Portfolio/New York Times ML Algorithm  /Op-Ed Training Datasets/Training-Dataset-2021-02-10 21:13:43.876754.csv"
+filepath = "scraped articles filepath .csv"
 data = pd.read_csv(filepath, encoding = "ISO-8859-1")
 
 X = data.iloc[:,4] # extract column with news article body
