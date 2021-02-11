@@ -17,7 +17,7 @@ vectorizer = pickle.load(open("vectorizer_NYT", 'rb'))
 ##############Predict sentiment using the trained classifier###################
 
 # Import test data set
-data_pred = pd.read_csv("/Users/samueljocas/Desktop/Data Science Portfolio/New York Times ML Algorithm  /NYT_OpEd_Test.csv", encoding = "ISO-8859-1")
+data_pred = pd.read_csv("test file path . csv", encoding = "ISO-8859-1")
 X_test = data_pred.iloc[:,4] # extract column with news articl
 X_vec_test = vectorizer.transform(X_test) #don't use fit_transform here because the model is already fitted
 X_vec_test = X_vec_test.todense() #convert sparse matrix to dense
